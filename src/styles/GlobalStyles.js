@@ -8,6 +8,8 @@ const GlobalStyles = createGlobalStyle`
         ${'' /* Colors */}
         --bg-primary: #0c0d08;
         --text-primary: #b8af9f;
+        ${'' /* --text-primary: #dfd3bf; */}
+        ${'' /* --text-primary: #e7e7e7; */}
         --yellow: #c3ae69;
         --pink: #eed0d1;
         
@@ -28,6 +30,15 @@ const GlobalStyles = createGlobalStyle`
 
     h1 {
         margin: 0;
+    }
+
+    a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: .2s;
+      :hover {
+        color: var(--pink);
+      }
     }
 `;
 
