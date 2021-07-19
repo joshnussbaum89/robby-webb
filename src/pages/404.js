@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Components
-import Nav from '../components/Nav';
-
 const ErrorHeader = styled.h1`
   display: block;
   text-align: center;
@@ -16,7 +13,6 @@ const ErrorHeader = styled.h1`
 const NotFoundPage = () => {
   return (
     <>
-      <Nav />
       <ErrorHeader>Page Not found 😢</ErrorHeader>
     </>
   );

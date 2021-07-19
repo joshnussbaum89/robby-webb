@@ -10,10 +10,11 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
-const NavStyles = styled.nav`
+const EntryNavStyles = styled.nav`
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   .nav-items {
@@ -35,21 +36,44 @@ const NavStyles = styled.nav`
       margin: 0rem 1rem;
     }
   }
+
+  .logo {
+    position: relative;
+
+    h1 {
+      color: var(--yellow);
+      font-size: var(--extraLarge);
+      font-weight: 900;
+    }
+
+    span {
+      position: absolute;
+      color: var(--text-primary);
+      left: 0;
+      top: 54px;
+    }
+  }
 `;
 
-const Nav = () => {
+const EntryNav = ({ toggleSelection }) => {
   return (
-    <NavStyles id='nav'>
-      <Logo />
+    <EntryNavStyles id='entry-nav'>
+      <Logo className='logo' />
       <ul className='nav-items'>
         <li>
-          <Link to='/'>About</Link>
+          <Link to='/about' onClick={toggleSelection}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to='/'>Discography</Link>
+          <Link to='/discography' onClick={toggleSelection}>
+            Discography
+          </Link>
         </li>
         <li>
-          <Link to='/'>Contact</Link>
+          <Link to='/contact' onClick={toggleSelection}>
+            Contact
+          </Link>
         </li>
       </ul>
       <div className='nav-icons'>
@@ -63,8 +87,8 @@ const Nav = () => {
           <PlayCircleOutlineIcon />
         </Link>
       </div>
-    </NavStyles>
+    </EntryNavStyles>
   );
 };
 
-export default Nav;
+export default EntryNav;

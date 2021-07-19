@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
         background: var(--bg-primary);
         color: var(--text-primary);
         font-family: 'Nunito Sans', sans-serif;
-        margin: 1rem;
+        ${'' /* margin: 1rem; */}
     }
 
     h1 {

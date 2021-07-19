@@ -1,21 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
 
-const Main = styled.main`
-  margin: 2rem 0rem;
+// Components
+import EntryNav from './EntryNav';
+import MainNav from './MainNav';
 
-  @media (min-width: 768px) {
+const MainContainerStyles = styled.div`
+  margin: 2rem 1rem;
+
+  @media (min-width: 820px) {
     margin: 4rem;
   }
 `;
 
 const Layout = ({ children }) => {
+  const [selected, setSelected] = useState(false);
+
+  const toggleSelection = () => {
+    if (selected === false) {
+      setSelected(!selected);
+    }
+  };
+
   return (
-    <Main>
+    <>
       <GlobalStyles />
-      {children}
-    </Main>
+      {!selected ? (
+        <EntryNav toggleSelection={toggleSelection} />
+      ) : (
+        <MainContainerStyles id='main-container'>
+          <MainNav toggleSelection={toggleSelection} />
+          {children}
+        </MainContainerStyles>
+      )}
+    </>
   );
 };
 
