@@ -1,14 +1,10 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 // Components
 import Logo from './Logo';
-
-// Icons
-import InstagramIcon from '@material-ui/icons/Instagram';
-import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import NavIcons from './NavIcons';
+import EntryAndMainNavItems from './EntryAndMainNavItems';
 
 const EntryNavStyles = styled.nav`
   display: flex;
@@ -45,12 +41,12 @@ const EntryNavStyles = styled.nav`
     }
     h1,
     a {
-      color: var(--yellow);
+      color: var(--pink);
     }
     span {
       position: absolute;
       color: var(--text-primary);
-      left: 0;
+      left: 3.77px;
       top: 54px;
     }
   }
@@ -60,28 +56,8 @@ const EntryNav = () => {
   return (
     <EntryNavStyles id='entry-nav'>
       <Logo className='logo' />
-      <ul className='nav-items'>
-        <li>
-          <Link to='/discography'>Discography</Link>
-        </li>
-        <li>
-          <Link to='/about'>About</Link>
-        </li>
-        <li>
-          <Link to='/contact'>Contact</Link>
-        </li>
-      </ul>
-      <div className='nav-icons'>
-        <Link to='/'>
-          <InstagramIcon />
-        </Link>
-        <Link to='/'>
-          <TwitterIcon />
-        </Link>
-        <Link to='/'>
-          <PlayCircleOutlineIcon />
-        </Link>
-      </div>
+      <EntryAndMainNavItems />
+      <NavIcons />
     </EntryNavStyles>
   );
 };

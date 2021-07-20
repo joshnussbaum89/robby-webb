@@ -7,11 +7,14 @@ const GlobalStyles = createGlobalStyle`
     :root {
         ${'' /* Colors */}
         --bg-primary: #0c0d08;
-        --text-primary: #b8af9f;
+        ${'' /* --bg-primary: #171216; */}
+        ${'' /* --text-primary: #b8af9f; */}
+        --text-primary: #ebebe1;
         ${'' /* --text-primary: #dfd3bf; */}
         ${'' /* --text-primary: #e7e7e7; */}
         --yellow: #c3ae69;
-        --pink: #eed0d1;
+        ${'' /* --pink: #eed0d1; */}
+        --pink: #F0D7Da;
         
         ${'' /* Font Sizes */}
         --extraSmall: 0.8rem;

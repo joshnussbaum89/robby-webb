@@ -4,11 +4,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 const discography = () => {
-  return (
-    <Layout>
-      <h2>discography</h2>
-    </Layout>
-  );
+  return <Layout></Layout>;
 };
 
 export default discography;

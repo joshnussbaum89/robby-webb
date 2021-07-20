@@ -6,7 +6,8 @@ import GlobalStyles from '../styles/GlobalStyles';
 import MainNav from './MainNav';
 
 const MainContainerStyles = styled.div`
-  margin: 2rem 1rem;
+  margin: 1rem;
+  height: 100vh;
 
   @media (min-width: 820px) {
     margin: 4rem;
