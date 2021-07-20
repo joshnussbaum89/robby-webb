@@ -1,7 +1,14 @@
 import React from 'react';
 
+// Components
+import Layout from '../components/Layout';
+
 const about = () => {
-  return <h2>about</h2>;
+  return (
+    <Layout>
+      <h2>About</h2>
+    </Layout>
+  );
 };
 
 export default about;

@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
 
 // Components
-import EntryNav from './EntryNav';
 import MainNav from './MainNav';
 
 const MainContainerStyles = styled.div`
@@ -15,25 +14,13 @@ const MainContainerStyles = styled.div`
 `;
 
 const Layout = ({ children }) => {
-  const [selected, setSelected] = useState(false);
-
-  const toggleSelection = () => {
-    if (selected === false) {
-      setSelected(!selected);
-    }
-  };
-
   return (
     <>
       <GlobalStyles />
-      {!selected ? (
-        <EntryNav toggleSelection={toggleSelection} />
-      ) : (
-        <MainContainerStyles id='main-container'>
-          <MainNav toggleSelection={toggleSelection} />
-          {children}
-        </MainContainerStyles>
-      )}
+      <MainContainerStyles id='main-container'>
+        <MainNav />
+        {children}
+      </MainContainerStyles>
     </>
   );
 };

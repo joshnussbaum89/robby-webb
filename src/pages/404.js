@@ -1,20 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Components
+import Layout from '../components/Layout';
+
 const ErrorHeader = styled.h1`
-  display: block;
   text-align: center;
-  margin: 2rem auto;
-  padding: 2rem;
-  width: 75%;
-  border-top: 1px solid var(--pink);
+  margin: 5rem 0;
 `;
 
 const NotFoundPage = () => {
   return (
-    <>
+    <Layout>
       <ErrorHeader>Page Not found 😢</ErrorHeader>
-    </>
+    </Layout>
   );
 };
 

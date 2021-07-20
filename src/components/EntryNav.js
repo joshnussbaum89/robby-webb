@@ -39,13 +39,14 @@ const EntryNavStyles = styled.nav`
 
   .logo {
     position: relative;
-
     h1 {
-      color: var(--yellow);
       font-size: var(--extraLarge);
       font-weight: 900;
     }
-
+    h1,
+    a {
+      color: var(--yellow);
+    }
     span {
       position: absolute;
       color: var(--text-primary);
@@ -55,25 +56,19 @@ const EntryNavStyles = styled.nav`
   }
 `;
 
-const EntryNav = ({ toggleSelection }) => {
+const EntryNav = () => {
   return (
     <EntryNavStyles id='entry-nav'>
       <Logo className='logo' />
       <ul className='nav-items'>
         <li>
-          <Link to='/about' onClick={toggleSelection}>
-            About
-          </Link>
+          <Link to='/discography'>Discography</Link>
         </li>
         <li>
-          <Link to='/discography' onClick={toggleSelection}>
-            Discography
-          </Link>
+          <Link to='/about'>About</Link>
         </li>
         <li>
-          <Link to='/contact' onClick={toggleSelection}>
-            Contact
-          </Link>
+          <Link to='/contact'>Contact</Link>
         </li>
       </ul>
       <div className='nav-icons'>
