@@ -4,21 +4,25 @@ import styled from 'styled-components';
 const ContactContainerStyles = styled.div`
   text-align: center;
   margin: 6rem auto;
+  width: 100%;
+  max-width: 800px;
+
   .header-container {
     position: relative;
     display: inline-block;
+    margin: auto;
   }
 
   h2::after {
     content: '';
     position: absolute;
-    left: 16px;
     top: 60px;
+    left: 16px;
+    background-color: var(--pink);
     width: 100%;
     height: 1rem;
-    border-radius: 4px;
+    border-radius: 2px;
     transform: rotate(-3deg);
-    background-color: var(--pink);
     z-index: -1;
   }
 `;
@@ -30,15 +34,15 @@ const ContactFormStyles = styled.form`
 
   input[type='text'],
   textarea {
-    color: var(--pink);
-    padding: 0.5rem;
-    margin: 0.2rem 0;
     background: var(--bg-primary);
-    outline: none;
+    color: var(--text-primary);
+    margin: 0.2rem 0;
+    padding: 0.5rem;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 2px solid var(--text-primary);
+    outline: none;
   }
 
   input[type='text']:focus,
@@ -48,23 +52,46 @@ const ContactFormStyles = styled.form`
 
   input[type='submit'] {
     background: var(--bg-primary);
-    color: var(--pink);
-    border: 1px solid var(--pink);
-    width: 75%;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
     display: block;
     margin: 0.5rem auto;
     padding: 0.5rem;
+    width: 40%;
+    border-radius: 2px;
     transition: 0.2s;
     cursor: pointer;
   }
   input[type='submit']:hover {
     background: var(--pink);
     color: var(--bg-primary);
+    border: 2px solid var(--pink);
   }
 
-  input[type='text']::placeholder,
-  textarea::placeholder {
+  label {
+    transform: translate(0.25rem, -2rem);
+    transition: all 0.2s ease-out;
+    width: 30px;
     color: var(--text-primary);
+    opacity: 0.6;
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label,
+  textarea:focus + label,
+  textarea:not(:placeholder-shown) + label {
+    color: var(--pink);
+    opacity: 1;
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    transform: translate(0, -3.75rem);
+  }
+
+  textarea:focus + label,
+  textarea:not(:placeholder-shown) + label {
+    transform: translate(0, -13.9rem);
   }
 `;
 
@@ -75,14 +102,12 @@ const ContactForm = () => {
         <h2>Contact</h2>
       </div>
       <ContactFormStyles name='contact' action='POST' data-netlify='true'>
-        <input type='text' placeholder='Name' name='name' />
-        <input type='text' placeholder='Email' name='email' />
-        <textarea
-          name='message'
-          placeholder='Message'
-          cols='30'
-          rows='10'
-        ></textarea>
+        <input type='text' placeholder=' ' name='name' />
+        <label for='name'>Name</label>
+        <input type='text' placeholder=' ' name='email' />
+        <label for='email'>Email</label>
+        <textarea name='message' placeholder=' ' cols='30' rows='10'></textarea>
+        <label for='message'>Message</label>
         <input type='submit' value='submit' />
       </ContactFormStyles>
     </ContactContainerStyles>

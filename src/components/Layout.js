@@ -1,3 +1,5 @@
+// TODO:
+// 1. Create album info context (context API) that can be used throughout site
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
