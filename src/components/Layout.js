@@ -1,5 +1,7 @@
 // TODO:
-// 1. Create album info context (context API) that can be used throughout site
+// 1. Render Album cards to 'discography' page
+// 2. Create About page with bio and photo - figure out styling
+// 3. Implement SEO
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
