@@ -17,6 +17,7 @@ const MainNavStyles = styled.nav`
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
+    z-index: 100;
   }
 
   .nav-items {

@@ -35,8 +35,27 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
     }
 
+    .header-container {
+      position: relative;
+      display: inline-block;
+      margin: auto;
+    }
+
     h2 {
       font-size: var(--large);
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 16px;
+      background-color: var(--pink);
+      width: 100%;
+      height: 1rem;
+      border-radius: 2px;
+      transform: rotate(-3deg);
+      z-index: -1;
     }
 
     a {

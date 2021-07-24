@@ -6,25 +6,6 @@ const ContactContainerStyles = styled.div`
   margin: 6rem auto;
   width: 100%;
   max-width: 800px;
-
-  .header-container {
-    position: relative;
-    display: inline-block;
-    margin: auto;
-  }
-
-  h2::after {
-    content: '';
-    position: absolute;
-    top: 60px;
-    left: 16px;
-    background-color: var(--pink);
-    width: 100%;
-    height: 1rem;
-    border-radius: 2px;
-    transform: rotate(-3deg);
-    z-index: -1;
-  }
 `;
 
 const ContactFormStyles = styled.form`
