@@ -36,6 +36,10 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
     }
 
+    h2 {
+        font-size: var(--large);
+    }
+
     .header-container {
       position: relative;
       display: inline-block;
@@ -44,7 +48,6 @@ const GlobalStyles = createGlobalStyle`
 
     @supports (-webkit-text-stroke: .8px var(--bg-primary)) {
       h2 {
-        font-size: var(--veryLarge);
         -webkit-text-stroke: .8px var(--bg-primary);
       }
     }
@@ -52,8 +55,8 @@ const GlobalStyles = createGlobalStyle`
     h2::after {
       content: '';
       position: absolute;
-      top: 90px;
-      left: 16px;
+      top: 57px;
+      left: 12px;
       background-color: var(--pink);
       width: 100%;
       height: 1rem;
@@ -69,6 +72,24 @@ const GlobalStyles = createGlobalStyle`
       :hover {
         color: var(--pink);
       }
+    }
+
+    @media (min-width: 820px) {
+      h2 {
+        font-size: var(--veryLarge);
+      }
+      h2::after {
+      content: '';
+      position: absolute;
+      top: 90px;
+      left: 16px;
+      background-color: var(--pink);
+      width: 100%;
+      height: 1rem;
+      border-radius: 2px;
+      transform: rotate(-3deg);
+      z-index: -1;
+    }
     }
 `;
 

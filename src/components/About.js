@@ -16,17 +16,27 @@ const ImageAndBio = styled.div`
 
   .header-container_text {
     text-align: center;
-    padding: 1rem;
+    padding: 0 1rem;
+  }
+
+  p {
+    font-size: var(--small);
+    font-weight: 100;
+    margin: 3rem 0;
   }
 
   @media (min-width: 820px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
   }
 `;
 
 const Titles = styled.div`
   display: flex;
   justify-content: space-evenly;
+  h3 {
+    font-size: var(--small);
+    margin-top: 0;
+  }
 `;
 
 const About = () => {

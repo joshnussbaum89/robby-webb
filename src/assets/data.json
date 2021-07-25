@@ -6,6 +6,7 @@
     "credits": "Producer, Engineer, Mixer, Drums, Percussion, Synths, Horn Arrangements",
     "label": "Independent",
     "year": "2019",
+    "slug": "up-up-and-away",
     "musicLinks": [
       {
         "id": 0,
@@ -27,6 +28,7 @@
     "credits": "Producer, Engineer, Mixer, Synths",
     "label": "Independent",
     "year": "2019",
+    "slug": "california",
     "musicLinks": [
       {
         "id": 0,
@@ -48,6 +50,7 @@
     "credits": "Producer, Engineer, Mixer, Drums, Synths",
     "label": "Independent",
     "year": "2020",
+    "slug": "the-fire",
     "musicLinks": [
       {
         "id": 0,
@@ -69,6 +72,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2020",
+    "slug": "i-am",
     "musicLinks": [
       {
         "id": 0,
@@ -90,6 +94,7 @@
     "credits": "Producer, Engineer, Mixer, Horn Arrangements",
     "label": "Independent",
     "year": "2019",
+    "slug": "jwytk",
     "musicLinks": [
       {
         "id": 0,
@@ -111,6 +116,7 @@
     "credits": "Producer, Engineer, Mixer, Synths",
     "label": "Independent",
     "year": "2019",
+    "slug": "taco-night",
     "musicLinks": [
       {
         "id": 0,
@@ -132,6 +138,7 @@
     "credits": "Vocal Engineer, Mixer",
     "label": "Independent",
     "year": "2021",
+    "slug": "stay",
     "musicLinks": [
       {
         "id": 0,
@@ -153,6 +160,7 @@
     "credits": "Co-Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2021",
+    "slug": "dreams-die",
     "musicLinks": [
       {
         "id": 0,
@@ -174,6 +182,7 @@
     "credits": "Co-Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2019",
+    "slug": "ten-percent",
     "musicLinks": [
       {
         "id": 0,
@@ -195,6 +204,7 @@
     "credits": "Co-Producer, Engineer, Mixer, Organ",
     "label": "Independent",
     "year": "2019",
+    "slug": "like-falling-asleep",
     "musicLinks": [
       {
         "id": 0,
@@ -216,6 +226,7 @@
     "credits": "Co-Producer, Engineer, Mixer, Drums",
     "label": "Independent",
     "year": "2019",
+    "slug": "enough",
     "musicLinks": [
       {
         "id": 0,
@@ -237,6 +248,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2020",
+    "slug": "wild",
     "musicLinks": [
       {
         "id": 0,
@@ -258,6 +270,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2018",
+    "slug": "happy",
     "musicLinks": [
       {
         "id": 0,
@@ -279,6 +292,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2018",
+    "slug": "make-it-pour",
     "musicLinks": [
       {
         "id": 0,
@@ -300,6 +314,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2018",
+    "slug": "heartbeat",
     "musicLinks": [
       {
         "id": 0,
@@ -321,6 +336,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2018",
+    "slug": "title-1",
     "musicLinks": [
       {
         "id": 0,
@@ -342,6 +358,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2016",
+    "slug": "waste",
     "musicLinks": [
       {
         "id": 0,
@@ -363,6 +380,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2018",
+    "slug": "tension",
     "musicLinks": [
       {
         "id": 0,
@@ -384,6 +402,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2019",
+    "slug": "sussing",
     "musicLinks": [
       {
         "id": 0,
@@ -405,6 +424,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2016",
+    "slug": "what-already-is",
     "musicLinks": [
       {
         "id": 0,
@@ -426,6 +446,7 @@
     "credits": "Mixer",
     "label": "Independent",
     "year": "2015",
+    "slug": "anchors",
     "musicLinks": [
       {
         "id": 0,
@@ -447,6 +468,7 @@
     "credits": "Mixer",
     "label": "Independent",
     "year": "2018",
+    "slug": "perception",
     "musicLinks": [
       {
         "id": 0,
@@ -468,6 +490,7 @@
     "credits": "Mixer",
     "label": "Independent",
     "year": "2018",
+    "slug": "superstition",
     "musicLinks": [
       {
         "id": 0,
@@ -489,6 +512,7 @@
     "credits": "Engineer, Mixer",
     "label": "Independent",
     "year": "2017",
+    "slug": "patch-of-dirt",
     "musicLinks": [
       {
         "id": 0,
@@ -510,6 +534,7 @@
     "credits": "Engineer, Mixer",
     "label": "Independent",
     "year": "2020",
+    "slug": "peace-drink",
     "musicLinks": [
       {
         "id": 0,
@@ -527,10 +552,11 @@
   {
     "id": 25,
     "artist": "Rover Rover",
-    "record": "No Where to Go - Single",
+    "record": "Nowhere to Go - Single",
     "credits": "Engineer, Mixer",
     "label": "Independent",
     "year": "2020",
+    "slug": "nowhere-to-go",
     "musicLinks": [
       {
         "id": 0,
@@ -552,6 +578,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2017",
+    "slug": "im-leaving",
     "musicLinks": [
       {
         "id": 0,
@@ -568,6 +595,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2017",
+    "slug": "lurking",
     "musicLinks": [
       {
         "id": 0,
@@ -584,6 +612,7 @@
     "credits": "Engineer, Mixer",
     "label": "Independent",
     "year": "2018",
+    "slug": "never-want-you-back",
     "musicLinks": [
       {
         "id": 0,
@@ -605,6 +634,7 @@
     "credits": "Engineer, Mixer",
     "label": "Independent",
     "year": "2019",
+    "slug": "love-spell",
     "musicLinks": [
       {
         "id": 0,
@@ -626,6 +656,7 @@
     "credits": "Producer, Engineer, Mixer",
     "label": "Independent",
     "year": "2020",
+    "slug": "hometown",
     "musicLinks": [
       {
         "id": 0,
@@ -647,6 +678,7 @@
     "credits": "Engineer, Mixer",
     "label": "Independent",
     "year": "2014",
+    "slug": "make-me-lovely",
     "musicLinks": [
       {
         "id": 0,
