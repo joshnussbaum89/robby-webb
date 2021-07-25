@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
         --small: 1.5rem;
         --medium: 1.8rem;
         --large: 2.25rem;
+        --veryLarge: 3.5rem;
         --extraLarge: 4.5rem;
     }
 
@@ -41,14 +42,17 @@ const GlobalStyles = createGlobalStyle`
       margin: auto;
     }
 
-    h2 {
-      font-size: var(--large);
+    @supports (-webkit-text-stroke: .8px var(--bg-primary)) {
+      h2 {
+        font-size: var(--veryLarge);
+        -webkit-text-stroke: .8px var(--bg-primary);
+      }
     }
 
     h2::after {
       content: '';
       position: absolute;
-      top: 60px;
+      top: 90px;
       left: 16px;
       background-color: var(--pink);
       width: 100%;

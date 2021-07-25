@@ -17,7 +17,11 @@ export const query = graphql`
   query MyQuery {
     allDataJson {
       nodes {
+        id
         artist
+        credits
+        year
+        record
         image {
           id
           childImageSharp {

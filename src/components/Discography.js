@@ -18,9 +18,11 @@ const AlbumsContainer = styled.div`
 const Discography = ({ data }) => {
   const { nodes: albumData } = data.allDataJson;
 
-  const albums = albumData.map((image) => (
+  const albums = albumData.map((image, id) => (
     <GatsbyImage
       image={getImage(image.image.childImageSharp.gatsbyImageData)}
+      alt={image.artist}
+      key={id}
     />
   ));
 

@@ -13,7 +13,7 @@ const MobileNavStyles = styled.div`
 
   .mobile-nav_overlay {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
