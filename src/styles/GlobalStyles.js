@@ -8,14 +8,10 @@ const GlobalStyles = createGlobalStyle`
     :root {
         ${'' /* Colors */}
         --bg-primary: #0c0d08;
-        ${'' /* --bg-primary: #171216; */}
-        ${'' /* --text-primary: #b8af9f; */}
         --text-primary: #ebebe1;
-        ${'' /* --text-primary: #dfd3bf; */}
-        ${'' /* --text-primary: #e7e7e7; */}
         --yellow: #c3ae69;
-        ${'' /* --pink: #eed0d1; */}
         --pink: #F0D7Da;
+        --pinkFaded: #f0d7dabe;
         
         ${'' /* Font Sizes */}
         --extraSmall: 0.8rem;
@@ -30,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
         background: var(--bg-primary);
         color: var(--text-primary);
         font-family: 'Nunito Sans', sans-serif;
+        letter-spacing: .01rem;
     }
 
     h1 {

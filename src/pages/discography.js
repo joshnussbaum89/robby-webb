@@ -22,12 +22,19 @@ export const query = graphql`
         credits
         year
         record
+        type
+        slug
         image {
           id
           childImageSharp {
             id
             gatsbyImageData
           }
+        }
+        musicLinks {
+          link
+          id
+          type
         }
       }
     }

@@ -80,12 +80,18 @@ const ContactForm = () => {
         <h2>Contact</h2>
       </div>
       <ContactFormStyles name='contact' action='POST' data-netlify='true'>
-        <input type='text' placeholder=' ' name='name' />
-        <label for='name'>Name</label>
-        <input type='text' placeholder=' ' name='email' />
-        <label for='email'>Email</label>
-        <textarea name='message' placeholder=' ' cols='30' rows='10'></textarea>
-        <label for='message'>Message</label>
+        <input type='text' placeholder=' ' name='name' id='name' />
+        <label htmlFor='name'>Name</label>
+        <input type='text' placeholder=' ' name='email' id='email' />
+        <label htmlFor='email'>Email</label>
+        <textarea
+          name='message'
+          placeholder=' '
+          cols='30'
+          rows='10'
+          id='message'
+        ></textarea>
+        <label htmlFor='message'>Message</label>
         <input type='submit' value='submit' />
       </ContactFormStyles>
     </ContactContainerStyles>

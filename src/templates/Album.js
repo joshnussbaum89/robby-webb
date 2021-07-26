@@ -15,7 +15,6 @@ const AlbumContainer = styled.div`
 
 const Album = ({ pageContext }) => {
   console.log(pageContext);
-
   return (
     <Layout>
       <AlbumContainer>

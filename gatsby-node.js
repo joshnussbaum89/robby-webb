@@ -13,6 +13,7 @@ async function turnAlbumsIntoPages({ graphql, actions }) {
           credits
           year
           record
+          type
           slug
           image {
             id
@@ -20,6 +21,11 @@ async function turnAlbumsIntoPages({ graphql, actions }) {
               id
               gatsbyImageData
             }
+          }
+          musicLinks {
+            link
+            id
+            type
           }
         }
       }
@@ -36,8 +42,10 @@ async function turnAlbumsIntoPages({ graphql, actions }) {
         credits: album.credits,
         year: album.year,
         record: album.record,
+        type: album.type,
         slug: album.slug,
         image: album.image,
+        musicLinks: album.musicLinks,
       },
     });
   });
