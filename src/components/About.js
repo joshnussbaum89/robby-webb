@@ -12,11 +12,10 @@ const ImageAndBio = styled.div`
   margin: 5rem 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  grid-gap: 5rem;
 
   .header-container_text {
-    text-align: center;
-    padding: 0 1rem;
+    text-align: left;
   }
 
   p {
@@ -26,15 +25,14 @@ const ImageAndBio = styled.div`
   }
 
   @media (min-width: 820px) {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
 const Titles = styled.div`
-  display: flex;
-  justify-content: space-evenly;
   h3 {
-    font-size: var(--small);
+    font-size: var(--large);
+    font-weight: 400;
     margin-top: 0;
   }
 `;
@@ -46,25 +44,26 @@ const About = () => {
         <h2>About</h2>
       </div>
       <ImageAndBio>
+        <StaticImage src='../assets/images/headshot.jpg' alt='A dinosaur' />
         <div className='header-container_text'>
           <Titles>
-            <h3>Producer</h3>
-            <h3>Drummer</h3>
-            <h3>Engineer</h3>
+            <h3>Producer | Drummer | Engineer</h3>
           </Titles>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
             aliquet enim tortor at auctor urna. In massa tempor nec feugiat nisl
             pretium fusce id. Tortor condimentum lacinia quis vel eros donec ac
-            odio tempor. In hac habitasse platea dictumst. Et malesuada fames ac
-            turpis egestas sed tempus. Duis at tellus at urna condimentum mattis
+            odio tempor.
+          </p>
+          <p>
+            In hac habitasse platea dictumst. Et malesuada fames ac turpis
+            egestas sed tempus. Duis at tellus at urna condimentum mattis
             pellentesque id nibh. Tellus pellentesque eu tincidunt tortor
             aliquam. Orci ac auctor augue mauris augue neque gravida in. Lacus
             sed turpis tincidunt id aliquet risus feugiat in.
           </p>
         </div>
-        <StaticImage src='../assets/images/headshot.jpg' alt='A dinosaur' />
       </ImageAndBio>
     </AboutContainer>
   );

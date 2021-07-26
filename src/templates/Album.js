@@ -43,27 +43,28 @@ const InfoContainer = styled.div`
 `;
 
 const Album = ({ pageContext }) => {
+  const { record, artist, type, credits, musicLinks, image } = pageContext;
+
   return (
     <Layout>
       <AlbumContainer>
         <div className='header-container'>
-          <h2>{pageContext.record}</h2>
+          <h2>{record}</h2>
         </div>
         <InfoContainer>
           <GatsbyImage
-            image={getImage(pageContext.image.childImageSharp.gatsbyImageData)}
-            alt={pageContext.artist}
+            image={getImage(image.childImageSharp.gatsbyImageData)}
+            alt={artist}
           />
           <div>
             <h3>
-              {pageContext.artist} "{pageContext.record}"
+              {artist} "{record}"
             </h3>
-            <p>{pageContext.type}</p>
-            <p></p>
-            <p>{pageContext.credits}</p>
+            <p>{type}</p>
+            <p>{credits}</p>
             <p>Independent</p>
             <p>
-              {pageContext.musicLinks.map((link) => (
+              {musicLinks.map((link) => (
                 <Link
                   key={link.id}
                   to={link.link}

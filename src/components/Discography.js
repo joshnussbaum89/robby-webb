@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const DiscographyContainer = styled.div`
   text-align: center;
   margin: 6rem 0;
-  width: 100%;
+  width: 100%; 
 `;
 
 const AlbumsContainer = styled.div`
