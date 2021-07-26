@@ -1,7 +1,7 @@
 import React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 const DiscographyContainer = styled.div`
   text-align: center;
@@ -46,13 +46,12 @@ const Discography = ({ data }) => {
   const { nodes: albumData } = data.allDataJson;
 
   console.log(albumData);
-  const albums = albumData.map((image, id) => (
-    <Link to={`/${image.slug}`}>
+  const albums = albumData.map((image) => (
+    <Link to={`/${image.slug}`} key={image.id}>
       <SingleAlbum>
         <GatsbyImage
           image={getImage(image.image.childImageSharp.gatsbyImageData)}
           alt={image.artist}
-          key={id}
         />
         <div className='text-block'>
           <h3>{`${image.artist} "${image.record}"`}</h3>
