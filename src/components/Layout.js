@@ -1,10 +1,9 @@
 // TODO:
-// 1. Render Album cards to 'discography' page
-// 2. Create About page with bio and photo - figure out styling
-// 3. Implement SEO
+// 1. Implement SEO
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
+import Footer from './Footer';
 
 // Components
 import MainNav from './MainNav';
@@ -25,6 +24,7 @@ const Layout = ({ children }) => {
       <MainContainerStyles id='main-container'>
         <MainNav />
         {children}
+        <Footer />
       </MainContainerStyles>
     </>
   );
