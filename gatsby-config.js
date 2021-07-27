@@ -1,7 +1,19 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://www.robbywebb.com',
     title: 'Robby Webb',
+    description: 'Robby Webb - Philadelphia based producer and musician',
+    keywords: [
+      'music',
+      ' recording',
+      ' engineer',
+      ' flamingo studios',
+      ' drums',
+      ' bass',
+      ' guitar',
+      ' philadelphia',
+      ' philly',
+    ],
   },
   plugins: [
     'gatsby-plugin-styled-components',

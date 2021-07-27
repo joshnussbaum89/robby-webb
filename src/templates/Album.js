@@ -2,9 +2,11 @@ import React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 // Components
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const AlbumContainer = styled.div`
   display: flex;
@@ -47,38 +49,45 @@ const Album = ({ pageContext }) => {
 
   return (
     <Layout>
-      <AlbumContainer>
-        <div className='header-container'>
-          <h2>{record}</h2>
-        </div>
-        <InfoContainer>
-          <GatsbyImage
-            image={getImage(image.childImageSharp.gatsbyImageData)}
-            alt={artist}
-          />
-          <div>
-            <h3>
-              {artist} "{record}"
-            </h3>
-            <p>{type}</p>
-            <p>{credits}</p>
-            <p>Independent</p>
-            <p>
-              {musicLinks.map((link) => (
-                <Link
-                  key={link.id}
-                  to={link.link}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='streaming-link'
-                >
-                  {link.type}{' '}
-                </Link>
-              ))}
-            </p>
+      <SEO siteTitle={`Robby Webb | ${record}`} />
+      <motion.section
+        style={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'easeInOut', duration: 0.5 }}
+      >
+        <AlbumContainer>
+          <div className='header-container'>
+            <h2>{record}</h2>
           </div>
-        </InfoContainer>
-      </AlbumContainer>
+          <InfoContainer>
+            <GatsbyImage
+              image={getImage(image.childImageSharp.gatsbyImageData)}
+              alt={artist}
+            />
+            <div>
+              <h3>
+                {artist} "{record}"
+              </h3>
+              <p>{type}</p>
+              <p>{credits}</p>
+              <p>Independent</p>
+              <p>
+                {musicLinks.map((link) => (
+                  <Link
+                    key={link.id}
+                    to={link.link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='streaming-link'
+                  >
+                    {link.type}{' '}
+                  </Link>
+                ))}
+              </p>
+            </div>
+          </InfoContainer>
+        </AlbumContainer>
+      </motion.section>
     </Layout>
   );
 };

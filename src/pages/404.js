@@ -1,18 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 // Components
 import Layout from '../components/Layout';
 
-const ErrorHeader = styled.h1`
+const ErrorHeader = styled.div`
   text-align: center;
-  margin: 5rem 0;
+  margin: 6rem 0;
+  width: 100%;
+  height: 100vh;
 `;
 
 const NotFoundPage = () => {
   return (
     <Layout>
-      <ErrorHeader>Page Not found 😢</ErrorHeader>
+      <motion.section
+        style={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'easeInOut', duration: 0.5 }}
+      >
+        <ErrorHeader>
+          <div className='header-container'>
+            <h2>Page Not found</h2>
+          </div>
+        </ErrorHeader>
+      </motion.section>
     </Layout>
   );
 };
