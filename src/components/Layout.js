@@ -1,5 +1,3 @@
-// TODO:
-// 1. Implement SEO
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
@@ -14,6 +12,12 @@ const MainContainerStyles = styled.div`
 
   @media (min-width: 820px) {
     margin: 4rem;
+  }
+
+  @media (min-width: 1020px) {
+    margin: 4rem auto;
+    width: 90%;
+    max-width: 1800px;
   }
 `;
 

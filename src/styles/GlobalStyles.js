@@ -9,11 +9,11 @@ import 'normalize.css';
 const GlobalStyles = createGlobalStyle`
     :root {
         ${'' /* Colors */}
-        --bg-primary: #0c0d08;
-        --text-primary: #ebebe1;
+        --bg-primary: #0f0f0f;
+        --text-primary: #fff;
         --yellow: #c3ae69;
-        --pink: #F0D7Da;
-        --pinkFaded: #f0d7dabe;
+        --pink: #f49ac2;
+        --pinkFaded: #f49ac381;
         
         ${'' /* Font Sizes */}
         --extraSmall: 0.8rem;
@@ -31,39 +31,6 @@ const GlobalStyles = createGlobalStyle`
         letter-spacing: .01rem;
     }
 
-    h1 {
-        margin: 0;
-    }
-
-    h2 {
-        font-size: var(--large);
-    }
-
-    .header-container {
-      position: relative;
-      display: inline-block;
-      margin: auto;
-    }
-
-    @supports (-webkit-text-stroke: .8px var(--bg-primary)) {
-      h2 {
-        -webkit-text-stroke: .8px var(--bg-primary);
-      }
-    }
-
-    h2::after {
-      content: '';
-      position: absolute;
-      top: 57px;
-      left: 12px;
-      background-color: var(--pink);
-      width: 100%;
-      height: 1rem;
-      border-radius: 2px;
-      transform: rotate(-3deg);
-      z-index: -1;
-    }
-
     a {
       color: var(--text-primary);
       text-decoration: none;
@@ -73,23 +40,26 @@ const GlobalStyles = createGlobalStyle`
       }
     }
 
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: var(--large);
+        font-weight: 400;
+    }
+
+    .header-container {
+      display: inline-block;
+      margin: auto;
+    } 
+
     @media (min-width: 820px) {
-      h2 {
-        font-size: var(--veryLarge);
+        h2 {
+          font-size: var(--veryLarge);
+        }
       }
-      h2::after {
-      content: '';
-      position: absolute;
-      top: 90px;
-      left: 16px;
-      background-color: var(--pink);
-      width: 100%;
-      height: 1rem;
-      border-radius: 2px;
-      transform: rotate(-3deg);
-      z-index: -1;
-    }
-    }
+    
 `;
 
 export default GlobalStyles;

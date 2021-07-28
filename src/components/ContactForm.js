@@ -14,45 +14,45 @@ const ContactFormStyles = styled.form`
   margin: 5rem 0;
 
   input[type='text'],
+  input[type='submit'],
   textarea {
     background: var(--bg-primary);
     color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+    transition: 0.2s;
+  }
+
+  input[type='text'],
+  textarea {
     margin: 0.2rem 0;
     padding: 0.5rem;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid var(--text-primary);
     outline: none;
-  }
-
-  input[type='text']:focus,
-  textarea:focus {
-    border-bottom: 2px solid var(--pink);
+    :focus {
+      border-bottom: 2px solid var(--pink);
+    }
   }
 
   input[type='submit'] {
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    border: 2px solid var(--text-primary);
     display: block;
     margin: 0.5rem auto;
     padding: 0.5rem;
     width: 40%;
     border-radius: 2px;
-    transition: 0.2s;
     cursor: pointer;
-  }
-  input[type='submit']:hover {
-    background: var(--pink);
-    color: var(--bg-primary);
-    border: 2px solid var(--pink);
+    :hover {
+      background: var(--pink);
+      color: var(--bg-primary);
+      border: 2px solid var(--pink);
+    }
   }
 
   label {
     transform: translate(0.25rem, -2rem);
     transition: all 0.2s ease-out;
-    width: 30px;
+    width: 1px;
     color: var(--text-primary);
     opacity: 0.6;
   }

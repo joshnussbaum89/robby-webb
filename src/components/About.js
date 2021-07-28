@@ -5,23 +5,28 @@ import styled from 'styled-components';
 const AboutContainer = styled.div`
   text-align: center;
   margin: 6rem 0;
-  width: 100%;
 `;
 
 const ImageAndBio = styled.div`
-  margin: 5rem 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 5rem;
+  margin: 5rem auto;
 
   .header-container_text {
+    margin: 0 auto;
     text-align: left;
+  }
+
+  .header-container_text,
+  .header-container_headshot {
+    max-width: 525px;
   }
 
   p {
     font-size: var(--small);
-    font-weight: 100;
-    margin: 3rem 0;
+    font-weight: 200;
+    margin: 2rem 0;
   }
 
   @media (min-width: 820px) {
@@ -44,7 +49,14 @@ const About = () => {
         <h2>About</h2>
       </div>
       <ImageAndBio>
-        <StaticImage src='../assets/images/headshot.jpg' alt='A dinosaur' />
+        <div className='header-container_image'>
+          <StaticImage
+            src='../assets/images/headshot.jpg'
+            alt='Robby Webb Headshot'
+            title='Robby Webb'
+            className='header-container_headshot'
+          />
+        </div>
         <div className='header-container_text'>
           <Titles>
             <h3>Producer | Drummer | Engineer</h3>

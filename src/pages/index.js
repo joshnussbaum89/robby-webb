@@ -3,7 +3,7 @@ import GlobalStyles from '../styles/GlobalStyles';
 import { motion } from 'framer-motion';
 
 // Components
-import EntryNav from '../components/EntryNav';
+import Home from '../components/Home';
 import SEO from '../components/SEO';
 
 const IndexPage = () => {
@@ -16,7 +16,7 @@ const IndexPage = () => {
         animate={{ opacity: 1 }}
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
-        <EntryNav />
+        <Home />
       </motion.section>
     </>
   );

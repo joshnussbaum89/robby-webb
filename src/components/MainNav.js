@@ -13,23 +13,19 @@ const MainNavStyles = styled.nav`
   align-items: center;
   margin-bottom: 4rem;
 
-  .nav-icons {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-    z-index: 100;
-  }
-
   .nav-items {
     display: none;
   }
 
   .nav-icons {
+    display: flex;
+    flex-direction: column;
     position: fixed;
+    z-index: 100;
     bottom: 0;
     right: 20px;
     a {
-      padding: 1rem 0 1rem 2rem;
+      padding: 1rem 0;
     }
   }
 

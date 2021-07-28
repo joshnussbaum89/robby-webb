@@ -6,7 +6,7 @@ import Logo from './Logo';
 import NavIcons from './NavIcons';
 import EntryAndMainNavItems from './EntryAndMainNavItems';
 
-const EntryNavStyles = styled.nav`
+const HomeStyles = styled.nav`
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -52,14 +52,14 @@ const EntryNavStyles = styled.nav`
   }
 `;
 
-const EntryNav = () => {
+const Home = () => {
   return (
-    <EntryNavStyles id='entry-nav'>
+    <HomeStyles id='entry-nav'>
       <Logo className='logo' />
       <EntryAndMainNavItems />
       <NavIcons />
-    </EntryNavStyles>
+    </HomeStyles>
   );
 };
 
-export default EntryNav;
+export default Home;

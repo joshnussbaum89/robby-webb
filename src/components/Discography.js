@@ -10,10 +10,15 @@ const DiscographyContainer = styled.div`
 `;
 
 const AlbumsContainer = styled.div`
-  margin: 5rem 0;
+  margin: 5rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
+  max-width: 2000px;
+
+  @media (min-width: 1020px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 const SingleAlbum = styled.div`
@@ -50,7 +55,7 @@ const Discography = ({ data }) => {
       <SingleAlbum>
         <GatsbyImage
           image={getImage(image.image.childImageSharp.gatsbyImageData)}
-          alt={image.artist}
+          alt={`${image.artist}, ${image.record}`}
         />
         <div className='text-block'>
           <h3>{`${image.artist} "${image.record}"`}</h3>
