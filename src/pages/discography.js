@@ -37,7 +37,7 @@ export const query = graphql`
           id
           childImageSharp {
             id
-            gatsbyImageData
+            gatsbyImageData(placeholder: BLURRED)
           }
         }
         musicLinks {

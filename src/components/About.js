@@ -55,6 +55,7 @@ const About = () => {
             alt='Robby Webb Headshot'
             title='Robby Webb'
             className='header-container_headshot'
+            placeholder='blurred'
           />
         </div>
         <div className='header-container_text'>

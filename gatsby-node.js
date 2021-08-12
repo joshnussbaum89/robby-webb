@@ -19,7 +19,7 @@ async function turnAlbumsIntoPages({ graphql, actions }) {
             id
             childImageSharp {
               id
-              gatsbyImageData
+              gatsbyImageData(placeholder: BLURRED)
             }
           }
           musicLinks {
