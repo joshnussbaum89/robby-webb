@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 // Components
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Seo from '../components/SEO';
 
 const AlbumContainer = styled.div`
   display: flex;
@@ -49,7 +49,7 @@ const Album = ({ pageContext }) => {
 
   return (
     <Layout>
-      <SEO siteTitle={`Robby Webb | ${record}`} />
+      <Seo siteTitle={`Robby Webb | ${record}`} />
       <motion.section
         style={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 
 // Components
 import Home from '../components/Home';
-import SEO from '../components/SEO';
+import Seo from '../components/SEO';
 
 const IndexPage = () => {
   return (
     <>
       <GlobalStyles />
-      <SEO />
+      <Seo />
       <motion.section
         style={{ opacity: 0 }}
         animate={{ opacity: 1 }}

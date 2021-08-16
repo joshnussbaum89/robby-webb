@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 // Components
 import Discography from '../components/Discography';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Seo from '../components/SEO';
 
 const discography = ({ data }) => {
   return (
     <Layout>
-      <SEO siteTitle='Robby Webb | Discography' />
+      <Seo siteTitle='Robby Webb | Discography' />
       <motion.section
         style={{ opacity: 0 }}
         animate={{ opacity: 1 }}

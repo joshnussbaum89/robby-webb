@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
+const Seo = ({ siteDescription, lang, meta, siteTitle }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -13,14 +13,13 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
             description
             siteUrl
             keywords
-            # TODO:
-            # Add image
+            image
           }
         }
       }
     `
   );
-  const { title, description, siteUrl, keywords } = site.siteMetadata;
+  const { title, description, siteUrl, keywords, image } = site.siteMetadata;
 
   return (
     <Helmet
@@ -28,7 +27,7 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
         lang,
       }}
       title={siteTitle || title}
-      //   titleTemplate={`%s | ${title}`}
+      titleTemplate={`%s | ${title}`}
       titleTemplate={siteTitle || title}
       meta={[
         {
@@ -57,10 +56,10 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
           property: `og:description`,
           content: siteDescription || description,
         },
-        // {
-        //   property: `og:image`,
-        //   content: `${siteUrl}${image}`,
-        // },
+        {
+          property: `og:image`,
+          content: `${siteUrl}${image}`,
+        },
 
         // Twitter card
         {
@@ -79,26 +78,26 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
           name: `twitter:url`,
           content: siteUrl,
         },
-        // {
-        //   name: `twitter:image`,
-        //   content: `${siteUrl}${image}`,
-        // },
+        {
+          name: `twitter:image`,
+          content: `${siteUrl}${image}`,
+        },
       ].concat(meta)}
     />
   );
 };
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   lang: `en`,
   meta: [],
   siteDescription: ``,
 };
 
-SEO.propTypes = {
+Seo.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   siteTitle: PropTypes.string,
   siteDescription: PropTypes.string,
 };
 
-export default SEO;
+export default Seo;

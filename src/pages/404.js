@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 // Components
 import Layout from '../components/Layout';
+import Seo from '../components/SEO';
 
 const ErrorHeader = styled.div`
   text-align: center;
@@ -15,6 +16,7 @@ const ErrorHeader = styled.div`
 const NotFoundPage = () => {
   return (
     <Layout>
+      <Seo siteTitle='Robby Webb | 404' />
       <motion.section
         style={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 // Components
 import Layout from '../components/Layout';
 import ContactForm from '../components/ContactForm';
-import SEO from '../components/SEO';
+import Seo from '../components/SEO';
 
 const contact = () => {
   return (
     <Layout>
-      <SEO siteTitle='Robby Webb | Contact' />
+      <Seo siteTitle='Robby Webb | Contact' />
       <motion.section
         style={{ opacity: 0 }}
         animate={{ opacity: 1 }}

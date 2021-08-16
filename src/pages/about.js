@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 // Components
 import Layout from '../components/Layout';
 import About from '../components/About';
-import SEO from '../components/SEO';
+import Seo from '../components/SEO';
 
 const about = () => {
   return (
     <Layout>
-      <SEO siteTitle='Robby Webb | About' />
+      <Seo siteTitle='Robby Webb | About' />
       <motion.section
         style={{ opacity: 0 }}
         animate={{ opacity: 1 }}

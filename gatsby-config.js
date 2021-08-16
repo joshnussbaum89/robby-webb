@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.robbywebb.com',
-    title: 'Robby Webb',
-    description: 'Robby Webb - Philadelphia based producer and musician',
+    title: 'Robby Webb: Producer, Drummer, Engineer',
+    description: 'Philadelphia based producer, drummer and engineer',
     keywords: [
       'music',
+      ' musician',
       ' recording',
       ' engineer',
       ' flamingo studios',
@@ -14,6 +15,7 @@ module.exports = {
       ' philadelphia',
       ' philly',
     ],
+    image: '/favicon.jpg',
   },
   plugins: [
     'gatsby-plugin-styled-components',
