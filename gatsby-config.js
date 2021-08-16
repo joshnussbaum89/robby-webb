@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.robbywebb.com',
-    title: 'Robby Webb: Producer, Drummer, Engineer',
+    title: 'Robby Webb | Producer, Drummer, Engineer',
     description: 'Philadelphia based producer, drummer and engineer',
     keywords: [
       'music',
