@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const FooterStyles = styled.footer`
@@ -15,13 +14,13 @@ const Footer = () => {
   return (
     <FooterStyles>
       &copy; Made with care by{' '}
-      <Link
-        to='https://joshnussbaum.io'
+      <a
+        href='https://joshnussbaum.io'
         target='_blank'
         rel='noopener noreferrer'
       >
         Josh Nussbaum
-      </Link>
+      </a>
     </FooterStyles>
   );
 };

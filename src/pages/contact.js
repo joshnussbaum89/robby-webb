@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 // Components
 import Layout from '../components/Layout';
 import ContactForm from '../components/ContactForm';
-import Seo from '../components/Seo';
+import Seo from '../components/SEO';
 
 const contact = () => {
   return (

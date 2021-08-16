@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 // Components
 import Discography from '../components/Discography';
 import Layout from '../components/Layout';
-import Seo from '../components/Seo';
+import Seo from '../components/SEO';
 
 const discography = ({ data }) => {
   return (
