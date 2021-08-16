@@ -20,25 +20,17 @@ const ImageAndBio = styled.div`
 
   .header-container_text,
   .header-container_headshot {
-    max-width: 525px;
+    max-width: 500px;
   }
 
   p {
     font-size: var(--small);
     font-weight: 200;
-    margin: 2rem 0;
+    margin: 0;
   }
 
   @media (min-width: 820px) {
     grid-template-columns: repeat(2, 1fr);
-  }
-`;
-
-const Titles = styled.div`
-  h3 {
-    font-size: var(--large);
-    font-weight: 400;
-    margin-top: 0;
   }
 `;
 
@@ -59,22 +51,10 @@ const About = () => {
           />
         </div>
         <div className='header-container_text'>
-          <Titles>
-            <h3>Producer | Drummer | Engineer</h3>
-          </Titles>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla
-            aliquet enim tortor at auctor urna. In massa tempor nec feugiat nisl
-            pretium fusce id. Tortor condimentum lacinia quis vel eros donec ac
-            odio tempor.
-          </p>
-          <p>
-            In hac habitasse platea dictumst. Et malesuada fames ac turpis
-            egestas sed tempus. Duis at tellus at urna condimentum mattis
-            pellentesque id nibh. Tellus pellentesque eu tincidunt tortor
-            aliquam. Orci ac auctor augue mauris augue neque gravida in. Lacus
-            sed turpis tincidunt id aliquet risus feugiat in.
+            Robby Webb is a producer, drummer, and engineer based out of
+            Philadelphia, PA. He has worked with numerous artists performing and
+            making records all over the country.
           </p>
         </div>
       </ImageAndBio>

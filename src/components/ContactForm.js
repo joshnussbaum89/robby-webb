@@ -56,6 +56,7 @@ const ContactFormStyles = styled.form`
     color: var(--text-primary);
     opacity: 0.6;
   }
+
   input:focus + label,
   input:not(:placeholder-shown) + label,
   textarea:focus + label,
@@ -63,10 +64,12 @@ const ContactFormStyles = styled.form`
     color: var(--pink);
     opacity: 1;
   }
+
   input:focus + label,
   input:not(:placeholder-shown) + label {
     transform: translate(0, -3.75rem);
   }
+
   textarea:focus + label,
   textarea:not(:placeholder-shown) + label {
     transform: translate(0, -13.9rem);

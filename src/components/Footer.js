@@ -6,6 +6,7 @@ const FooterStyles = styled.footer`
   font-size: var(--extraSmall);
   text-align: center;
   margin: 1rem;
+  padding-bottom: 1rem;
   font-weight: 200;
   opacity: 0.8;
 `;
