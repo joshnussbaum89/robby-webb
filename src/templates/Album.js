@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 // Components
 import Layout from '../components/Layout';
-import Seo from '../components/SEO';
+import Seo from '../components/Seo';
 
 const AlbumContainer = styled.div`
   display: flex;

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 // Components
 import Home from '../components/Home';
-import Seo from '../components/SEO';
+import Seo from '../components/Seo';
 
 const IndexPage = () => {
   return (

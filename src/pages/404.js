@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 // Components
 import Layout from '../components/Layout';
-import Seo from '../components/SEO';
+import Seo from '../components/Seo';
 
 const ErrorHeader = styled.div`
   text-align: center;
