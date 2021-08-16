@@ -79,9 +79,9 @@ const ContactFormStyles = styled.form`
 const ContactForm = () => {
   return (
     <ContactContainerStyles>
-      <div className='header-container'>
+      <section className='header-container'>
         <h2>Contact</h2>
-      </div>
+      </section>
       <ContactFormStyles name='contact' action='POST' data-netlify='true'>
         <input type='text' placeholder=' ' name='name' id='name' />
         <label htmlFor='name'>Name</label>

@@ -7,7 +7,7 @@ const AboutContainer = styled.div`
   margin: 6rem 0;
 `;
 
-const ImageAndBio = styled.div`
+const ImageAndBio = styled.article`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 5rem;
@@ -37,11 +37,11 @@ const ImageAndBio = styled.div`
 const About = () => {
   return (
     <AboutContainer>
-      <div className='header-container'>
+      <section className='header-container'>
         <h2>About</h2>
-      </div>
+      </section>
       <ImageAndBio>
-        <div className='header-container_image'>
+        <section className='header-container_image'>
           <StaticImage
             src='../assets/images/headshot.jpg'
             alt='Robby Webb Headshot'
@@ -49,14 +49,14 @@ const About = () => {
             className='header-container_headshot'
             placeholder='blurred'
           />
-        </div>
-        <div className='header-container_text'>
+        </section>
+        <section className='header-container_text'>
           <p>
             Robby Webb is a producer, drummer, and engineer based out of
             Philadelphia, PA. He has worked with numerous artists performing and
             making records all over the country.
           </p>
-        </div>
+        </section>
       </ImageAndBio>
     </AboutContainer>
   );

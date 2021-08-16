@@ -6,7 +6,7 @@ import Footer from './Footer';
 // Components
 import MainNav from './MainNav';
 
-const MainContainerStyles = styled.div`
+const MainContainerStyles = styled.main`
   margin: 1rem;
   height: 100vh;
 

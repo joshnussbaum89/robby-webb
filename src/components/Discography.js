@@ -2,6 +2,7 @@ import React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazyload';
 
 const DiscographyContainer = styled.div`
   text-align: center;
@@ -9,7 +10,7 @@ const DiscographyContainer = styled.div`
   width: 100%;
 `;
 
-const AlbumsContainer = styled.div`
+const AlbumsContainer = styled.article`
   margin: 5rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -21,7 +22,7 @@ const AlbumsContainer = styled.div`
   }
 `;
 
-const SingleAlbum = styled.div`
+const SingleAlbum = styled.section`
   position: relative;
   cursor: pointer;
 
@@ -51,24 +52,26 @@ const Discography = ({ data }) => {
   const { nodes: albumData } = data.allDataJson;
 
   const albums = albumData.map((image) => (
-    <Link to={`/${image.slug}`} key={image.id}>
-      <SingleAlbum>
-        <GatsbyImage
-          image={getImage(image.image.childImageSharp.gatsbyImageData)}
-          alt={`${image.artist}, ${image.record}`}
-        />
-        <div className='text-block'>
-          <h3>{`${image.artist} "${image.record}"`}</h3>
-        </div>
-      </SingleAlbum>
-    </Link>
+    <LazyLoad height={200}>
+      <Link to={`/${image.slug}`} key={image.id}>
+        <SingleAlbum>
+          <GatsbyImage
+            image={getImage(image.image.childImageSharp.gatsbyImageData)}
+            alt={`${image.artist}, ${image.record}`}
+          />
+          <div className='text-block'>
+            <h3>{`${image.artist} "${image.record}"`}</h3>
+          </div>
+        </SingleAlbum>
+      </Link>
+    </LazyLoad>
   ));
 
   return (
     <DiscographyContainer>
-      <div className='header-container'>
+      <section className='header-container'>
         <h2>Discography</h2>
-      </div>
+      </section>
       <AlbumsContainer>{albums}</AlbumsContainer>
     </DiscographyContainer>
   );
