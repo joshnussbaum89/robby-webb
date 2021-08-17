@@ -1,4 +1,5 @@
 import React from 'react';
+// import { navigate } from 'gatsby';
 import styled from 'styled-components';
 
 const ContactContainerStyles = styled.div`
@@ -77,12 +78,26 @@ const ContactFormStyles = styled.form`
 `;
 
 const ContactForm = () => {
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   navigate('/success');
+  // };
+
   return (
     <ContactContainerStyles>
       <section className='header-container'>
         <h2>Contact</h2>
       </section>
-      <ContactFormStyles name='contact' action='POST' data-netlify='true'>
+      <ContactFormStyles
+        name='contact'
+        action='post'
+        data-netlify='true'
+        netlify-honeypot='bot-field'
+      >
+        {/* hidden Netlify fields */}
+        <input type='hidden' name='bot-field' />
+        <input type='hidden' name='form-name' value='contact' />
+        {/*  */}
         <input type='text' placeholder=' ' name='name' id='name' />
         <label htmlFor='name'>Name</label>
         <input type='text' placeholder=' ' name='email' id='email' />
