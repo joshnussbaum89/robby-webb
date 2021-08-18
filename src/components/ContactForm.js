@@ -113,8 +113,6 @@ const ContactForm = () => {
             id='message'
           ></textarea>
           <label htmlFor='message'>Message</label>
-          {/* <input type='submit' value='submit' /> */}
-          <div data-netlify-captcha></div>
           <button type='submit'>submit</button>
         </form>
       </ContactFormStyles>
