@@ -1,5 +1,4 @@
 import React from 'react';
-// import { navigate } from 'gatsby';
 import styled from 'styled-components';
 
 const ContactContainerStyles = styled.div`
@@ -80,11 +79,6 @@ const ContactFormStyles = styled.form`
 `;
 
 const ContactForm = () => {
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   navigate('/success');
-  // };
-
   return (
     <ContactContainerStyles>
       <section className='header-container'>
@@ -102,9 +96,15 @@ const ContactForm = () => {
           <input type='hidden' name='bot-field' />
           <input type='hidden' name='form-name' value='contact' />
           {/*  */}
-          <input type='text' placeholder=' ' name='username' id='username' />
+          <input
+            type='text'
+            placeholder=' '
+            name='username'
+            id='username'
+            required
+          />
           <label htmlFor='username'>Name</label>
-          <input type='text' placeholder=' ' name='email' id='email' />
+          <input type='text' placeholder=' ' name='email' id='email' required />
           <label htmlFor='email'>Email</label>
           <textarea
             name='message'
@@ -112,6 +112,7 @@ const ContactForm = () => {
             cols='30'
             rows='10'
             id='message'
+            required
           ></textarea>
           <label htmlFor='message'>Message</label>
           <button type='submit'>submit</button>

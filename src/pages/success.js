@@ -7,11 +7,14 @@ import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Seo from '../components/SEO';
 
-const ErrorHeader = styled.div`
+const ValidationHeader = styled.div`
   text-align: center;
   margin: 6rem 0;
   width: 100%;
   height: 100vh;
+  a {
+    text-transform: uppercase;
+  }
 `;
 
 const NotFoundPage = () => {
@@ -23,12 +26,12 @@ const NotFoundPage = () => {
         animate={{ opacity: 1 }}
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
-        <ErrorHeader>
+        <ValidationHeader>
           <div className='header-container'>
             <h2>Form successfully submitted</h2>
             <Link to='/'>Return Home</Link>
           </div>
-        </ErrorHeader>
+        </ValidationHeader>
       </motion.section>
     </Layout>
   );
