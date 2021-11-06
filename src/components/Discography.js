@@ -26,10 +26,10 @@ const SingleAlbum = styled.section`
   position: relative;
   cursor: pointer;
 
-  :hover .text-block {
+  :hover .release-info {
     opacity: 1;
   }
-  .text-block {
+  .release-info {
     position: absolute;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ const Discography = ({ data }) => {
             image={getImage(image.image.childImageSharp.gatsbyImageData)}
             alt={`${image.artist}, ${image.record}`}
           />
-          <div className='text-block'>
+          <div className='release-info'>
             <h3>{`${image.artist} "${image.record}"`}</h3>
           </div>
         </SingleAlbum>
