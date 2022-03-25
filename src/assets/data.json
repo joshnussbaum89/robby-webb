@@ -1,6 +1,75 @@
 [
   {
     "id": 0,
+    "artist": "Taylor Kelly",
+    "record": "All I Need",
+    "type": "EP",
+    "credits": "Producer, Engineer, Mixer",
+    "label": "Independent",
+    "year": "2022",
+    "slug": "all-i-need",
+    "musicLinks": [
+      {
+        "id": 0,
+        "type": "Apple Music",
+        "link": "https://music.apple.com/us/album/all-i-need-ep/1609521357"
+      },
+      {
+        "id": 1,
+        "type": "Spotify",
+        "link": "https://open.spotify.com/album/0Ncwcr5awEBN7R9vdzZNOk?si=MnUqNWZoSVunh1HR8agH-g"
+      }
+    ],
+    "image": "../assets/images/tk_all-i-need.webp"
+  },
+  {
+    "id": 1,
+    "artist": "Dylan Jane",
+    "record": "Year Of The Tiger",
+    "type": "single",
+    "credits": "Drums",
+    "label": "Independent",
+    "year": "2022",
+    "slug": "year-of-the-tiger",
+    "musicLinks": [
+      {
+        "id": 0,
+        "type": "Apple Music",
+        "link": "https://music.apple.com/us/album/year-of-the-tiger-single/1611833732"
+      },
+      {
+        "id": 1,
+        "type": "Spotify",
+        "link": "https://open.spotify.com/track/2Qbhb9U0wNRbl3RSSkZhkS?si=eecb6a78633c47bb"
+      }
+    ],
+    "image": "../assets/images/dj_year-of-the-tiger.webp"
+  },
+  {
+    "id": 2,
+    "artist": "Taylor Kelly",
+    "record": "Sabotage",
+    "type": "Single",
+    "credits": "Producer, Engineer, Mixer",
+    "label": "Independent",
+    "year": "2021",
+    "slug": "death-of-a-romantic-album",
+    "musicLinks": [
+      {
+        "id": 0,
+        "type": "Apple Music",
+        "link": "https://music.apple.com/us/album/sabotage-feat-zeek-burse-single/1603080230"
+      },
+      {
+        "id": 1,
+        "type": "Spotify",
+        "link": "https://open.spotify.com/album/0LYjySMTbbjB8KJTZOBv1H?si=GW22KTWsSaqb9LlpfFJ-xA"
+      }
+    ],
+    "image": "../assets/images/tk_sabotage.webp"
+  },
+  {
+    "id": 3,
     "artist": "Keely Sibilia",
     "record": "Death of a Romantic",
     "type": "Album",
@@ -23,7 +92,7 @@
     "image": "../assets/images/ks_death-of-a-romantic_album.jpg"
   },
   {
-    "id": 1,
+    "id": 4,
     "artist": "Keely Sibilia",
     "record": "Tell Me",
     "type": "Single",
@@ -46,7 +115,7 @@
     "image": "../assets/images/ks_tell-me.jpg"
   },
   {
-    "id": 2,
+    "id": 5,
     "artist": "Keely Sibilia",
     "record": "Underground",
     "type": "Single",
@@ -69,7 +138,7 @@
     "image": "../assets/images/ks_underground.jpg"
   },
   {
-    "id": 3,
+    "id": 6,
     "artist": "Keely Sibilia",
     "record": "Death of a Romantic",
     "type": "Single",
@@ -92,7 +161,7 @@
     "image": "../assets/images/ks_death-of-a-romantic_single.jpg"
   },
   {
-    "id": 4,
+    "id": 7,
     "artist": "Taylor Kelly",
     "record": "Maybe",
     "type": "Single",
@@ -115,7 +184,7 @@
     "image": "../assets/images/tk_maybe.jpg"
   },
   {
-    "id": 5,
+    "id": 8,
     "artist": "Shoot the Messenger",
     "record": "Stay",
     "type": "Single",
@@ -138,7 +207,7 @@
     "image": "../assets/images/stm_stay.jpg"
   },
   {
-    "id": 6,
+    "id": 9,
     "artist": "Gracie Martin",
     "record": "Dreams Die",
     "type": "Single",
@@ -161,7 +230,7 @@
     "image": "../assets/images/gm_dreams-die.jpg"
   },
   {
-    "id": 7,
+    "id": 10,
     "artist": "Maggie Mae",
     "record": "Hometown",
     "type": "Single",
@@ -184,7 +253,7 @@
     "image": "../assets/images/mm_hometown.jpg"
   },
   {
-    "id": 8,
+    "id": 11,
     "artist": "Keely Sibilia",
     "record": "Wild",
     "type": "Single",
@@ -207,7 +276,7 @@
     "image": "../assets/images/ks_wild.jpg"
   },
   {
-    "id": 9,
+    "id": 12,
     "artist": "Rover Rover",
     "record": "Peace Drink",
     "type": "LP",
@@ -230,7 +299,7 @@
     "image": "../assets/images/rr_peace-drink.jpg"
   },
   {
-    "id": 10,
+    "id": 13,
     "artist": "Rover Rover",
     "record": "Nowhere to Go",
     "type": "Single",
@@ -253,7 +322,7 @@
     "image": "../assets/images/rr_nowhere-to-go.jpg"
   },
   {
-    "id": 11,
+    "id": 14,
     "artist": "Taylor Kelly",
     "record": "I Am",
     "type": "Single",
@@ -276,7 +345,7 @@
     "image": "../assets/images/tk_iam.jpg"
   },
   {
-    "id": 12,
+    "id": 15,
     "artist": "Taylor Kelly",
     "record": "The Fire",
     "type": "Single",
@@ -299,7 +368,7 @@
     "image": "../assets/images/tk_fire.jpg"
   },
   {
-    "id": 13,
+    "id": 16,
     "artist": "John Udinsky, Jr.",
     "record": "Movin' Along",
     "type": "LP",
@@ -322,7 +391,7 @@
     "image": "../assets/images/ju_movin-along.jpg"
   },
   {
-    "id": 14,
+    "id": 17,
     "artist": "Gracie Martin",
     "record": "10%",
     "type": "Single",
@@ -345,7 +414,7 @@
     "image": "../assets/images/gm_ten.jpg"
   },
   {
-    "id": 15,
+    "id": 18,
     "artist": "Gracie Martin",
     "record": "Like Falling Asleep",
     "type": "Single",
@@ -368,7 +437,7 @@
     "image": "../assets/images/gm_like-falling-asleep.jpg"
   },
   {
-    "id": 16,
+    "id": 19,
     "artist": "Weekend Athlete",
     "record": "Sussing",
     "type": "EP",
@@ -391,7 +460,7 @@
     "image": "../assets/images/wa_sussing.jpg"
   },
   {
-    "id": 17,
+    "id": 20,
     "artist": "Míssy Belgré",
     "record": "Love Spell",
     "type": "Single",
@@ -414,7 +483,7 @@
     "image": "../assets/images/mb_love-spell.jpg"
   },
   {
-    "id": 18,
+    "id": 21,
     "artist": "Taylor Kelly",
     "record": "Up Up and Away",
     "type": "LP",
@@ -437,7 +506,7 @@
     "image": "../assets/images/tk_up-up.jpg"
   },
   {
-    "id": 19,
+    "id": 22,
     "artist": "Taylor Kelly",
     "record": "California",
     "type": "Single",
@@ -460,7 +529,7 @@
     "image": "../assets/images/tk_california.jpg"
   },
   {
-    "id": 20,
+    "id": 23,
     "artist": "Punk Hands",
     "record": "Enough",
     "type": "Single",
@@ -483,7 +552,7 @@
     "image": "../assets/images/ph_enough.jpg"
   },
   {
-    "id": 21,
+    "id": 24,
     "artist": "Taylor Kelly",
     "record": "Taco Night",
     "type": "Single",
@@ -506,7 +575,7 @@
     "image": "../assets/images/tk_taco-night.jpg"
   },
   {
-    "id": 22,
+    "id": 25,
     "artist": "Taylor Kelly",
     "record": "Jwytk",
     "type": "Single",
@@ -529,7 +598,7 @@
     "image": "../assets/images/tk_jwytk.jpg"
   },
   {
-    "id": 23,
+    "id": 26,
     "artist": "Nathan Allebach",
     "record": "Tension",
     "type": "LP",
@@ -552,7 +621,7 @@
     "image": "../assets/images/na_tension.jpg"
   },
   {
-    "id": 24,
+    "id": 27,
     "artist": "Keely Sibilia",
     "record": "Title 1",
     "type": "Single",
@@ -575,7 +644,7 @@
     "image": "../assets/images/ks_title-one.jpg"
   },
   {
-    "id": 25,
+    "id": 28,
     "artist": "Keely Sibilia",
     "record": "Make It Pour",
     "type": "Single",
@@ -598,7 +667,7 @@
     "image": "../assets/images/ks_make-it-pour.jpg"
   },
   {
-    "id": 26,
+    "id": 29,
     "artist": "Keely Sibilia",
     "record": "Happy",
     "type": "Single",
@@ -621,7 +690,7 @@
     "image": "../assets/images/ks_happy.jpg"
   },
   {
-    "id": 27,
+    "id": 30,
     "artist": "Sonnder",
     "record": "Never Want You Back",
     "type": "Single",
@@ -644,7 +713,7 @@
     "image": "../assets/images/sr_never-want-you-back.jpg"
   },
   {
-    "id": 28,
+    "id": 31,
     "artist": "Keely Sibilia",
     "record": "Heartbeat",
     "type": "Single",
@@ -667,7 +736,7 @@
     "image": "../assets/images/ks_heartbeat.jpg"
   },
   {
-    "id": 29,
+    "id": 32,
     "artist": "Ode To Omni",
     "record": "Superstition",
     "type": "Single",
@@ -690,7 +759,7 @@
     "image": "../assets/images/mm-oto_superstition.jpg"
   },
   {
-    "id": 30,
+    "id": 33,
     "artist": "Ode To Omni",
     "record": "Perception",
     "type": "LP",
@@ -713,7 +782,7 @@
     "image": "../assets/images/mm-oto_perception.jpg"
   },
   {
-    "id": 31,
+    "id": 34,
     "artist": "Rover Rover",
     "record": "Patch of Dirt",
     "type": "Single",
@@ -736,7 +805,7 @@
     "image": "../assets/images/rr_patch-of-dirt.jpg"
   },
   {
-    "id": 32,
+    "id": 35,
     "artist": "Joshua Bation",
     "record": "Lurking",
     "type": "Single",
@@ -754,7 +823,7 @@
     "image": "../assets/images/jb_lurking.jpg"
   },
   {
-    "id": 33,
+    "id": 36,
     "artist": "Joshua Bation",
     "record": "I'm Leaving",
     "type": "Single",
@@ -772,7 +841,7 @@
     "image": "../assets/images/jb_im-leaving.jpg"
   },
   {
-    "id": 34,
+    "id": 37,
     "artist": "Nathan Allebach",
     "record": "Waste",
     "type": "LP",
@@ -795,7 +864,7 @@
     "image": "../assets/images/na_waste.jpg"
   },
   {
-    "id": 35,
+    "id": 38,
     "artist": "Josh Nussbaum",
     "record": "What Already Is",
     "type": "EP",
@@ -818,7 +887,7 @@
     "image": "../assets/images/jn_what-already-is.jpg"
   },
   {
-    "id": 36,
+    "id": 39,
     "artist": "Ode To Omni",
     "record": "Anchors",
     "type": "LP",
@@ -841,7 +910,7 @@
     "image": "../assets/images/oto_anchors.jpg"
   },
   {
-    "id": 37,
+    "id": 40,
     "artist": "Feedlab Music",
     "record": "Make Me Lovely",
     "type": "Cover",
