@@ -41,7 +41,6 @@ const InfoContainerStyles = styled.div`
     background: var(--bg-primary);
     border: 1px solid var(--text-primary);
     border-radius: 2px;
-
     :hover {
       color: var(--bg-primary);
       background: var(--pink);
@@ -70,12 +69,12 @@ const Album = ({ album }) => {
           <InfoContainerStyles>
             <Image
               src={image}
-              alt={`${artist}: ${record}`}
+              title={`${artist}: ${record}`}
               width={633}
               height={633}
-              title={`${artist}: ${record}`}
-              placeholder="blur"
-              blurDataURL={`${image}`}
+              sizes="(min-width: 820px) 50vw, 100vw"
+              alt={`${artist}: ${record}`}
+              priority="true"
             />
             <div>
               <h3>

@@ -69,8 +69,7 @@ const Discography = ({ albumData }) => {
                 alt={`${album.artist}, ${album.record}`}
                 width={460}
                 height={460}
-                placeholder="blur"
-                blurDataURL={album.image}
+                sizes="(min-width: 820px) 50vw, 100vw"
               />
               <div className="release-info">
                 <h3>{`${album.artist} "${album.record}"`}</h3>

@@ -51,10 +51,11 @@ const About = () => {
           src={robbyHeadshot}
           width={500}
           height={750}
+          sizes="(min-width: 820px) 50vw, 100vw"
           title="Robby Webb"
           alt="Robby Webb Headshot"
+          priority="true"
           placeholder="blur"
-          blurDataURL={`${robbyHeadshot}`}
         />
         <section className="header-container_text">
           <p>
