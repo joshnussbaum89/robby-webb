@@ -1,19 +1,29 @@
+import Link from 'next/link'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import Layout from '../components/Layout'
+import PageTitle from '../components/PageTitle'
 
 const ValidationHeader = styled.div`
-  text-align: center;
-  margin: 6rem 0;
-  width: 100%;
   height: 100vh;
+  margin: 6rem 0;
+  text-align: center;
+
   a {
+    display: block;
+    margin: 2rem 0;
     text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: 820px) {
+    a {
+      font-size: var(--small);
+    }
   }
 `
 
-const NotFoundPage = () => {
+const success = () => {
   return (
     <Layout>
       <motion.section
@@ -22,14 +32,12 @@ const NotFoundPage = () => {
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
         <ValidationHeader>
-          <div className="header-container">
-            <h2>Form successfully submitted</h2>
-            <Link href="/">Return Home</Link>
-          </div>
+          <PageTitle title="Form successfully submitted" />
+          <Link href="/">Return Home</Link>
         </ValidationHeader>
       </motion.section>
     </Layout>
   )
 }
 
-export default NotFoundPage
+export default success
