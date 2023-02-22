@@ -50,7 +50,8 @@ const InfoContainerStyles = styled.div`
 `
 
 const Album = ({ album }) => {
-  const { record, artist, type, credits, slug, musicLinks, image } = album[0]
+  const { record, artist, type, credits, label, slug, musicLinks, image } =
+    album[0]
 
   return (
     <Layout>
@@ -82,7 +83,7 @@ const Album = ({ album }) => {
               </h3>
               <p>{type}</p>
               <p>{credits}</p>
-              <p>Independent</p>
+              <p>{label || 'Independent'}</p>
               <p>
                 {musicLinks?.map((link) => (
                   <Link
