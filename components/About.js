@@ -13,7 +13,7 @@ const ImageAndBioStyles = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 5rem;
-  margin: 5rem auto;
+  margin: 4rem auto;
 
   img {
     max-width: 100%;

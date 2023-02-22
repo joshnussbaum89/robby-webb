@@ -35,7 +35,10 @@ const GlobalStyles = createGlobalStyle`
     color: var(--text-primary);
     text-decoration: none;
     transition: .2s;
-    :hover {
+  }
+
+  @media (min-width: 820px) {
+    a:hover {
       color: var(--pink);
     }
   }

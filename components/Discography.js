@@ -10,7 +10,7 @@ const DiscographyContainerStyles = styled.section`
 `
 
 const AlbumsContainerStyles = styled.div`
-  margin: 5rem auto;
+  margin: 4rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   justify-items: center;
@@ -33,8 +33,10 @@ const SingleAlbumStyles = styled.div`
     object-fit: cover;
   }
 
-  :hover .release-info {
-    opacity: 1;
+  @media (min-width: 820px) {
+    :hover .release-info {
+      opacity: 1;
+    }
   }
 
   .release-info {

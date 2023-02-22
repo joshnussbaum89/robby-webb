@@ -11,7 +11,7 @@ const ContactContainerStyles = styled.section`
 const ContactFormStyles = styled.form`
   display: flex;
   flex-direction: column;
-  margin: 5rem 0;
+  margin: 4rem 0;
 
   input[type='text'],
   button[type='submit'],
