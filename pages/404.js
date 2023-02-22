@@ -5,10 +5,10 @@ import PageTitle from '../components/PageTitle'
 import { motion } from 'framer-motion'
 
 const ErrorHeader = styled.div`
-  text-align: center;
-  margin: 6rem 0;
   width: 100%;
   height: 100vh;
+  margin: 6rem 0;
+  text-align: center;
 `
 
 const NotFoundPage = () => {

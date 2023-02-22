@@ -41,7 +41,7 @@ const HomeStyles = styled.nav`
 
 const Home = () => {
   return (
-    <HomeStyles id="entry-nav">
+    <HomeStyles>
       <Logo />
       <EntryAndMainNavItems />
       <NavIcons />

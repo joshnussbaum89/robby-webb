@@ -24,7 +24,7 @@ const LogoStyles = styled.div`
 
 const Logo = () => {
   return (
-    <LogoStyles className='logo'>
+    <LogoStyles>
       <h1>
         <Link href="/">
           ROBBY <span>WEBB</span>

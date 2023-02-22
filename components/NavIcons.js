@@ -8,6 +8,7 @@ const NavIconsStyles = styled.div`
   right: 20px;
   bottom: 0;
   z-index: 100;
+
   a {
     padding: 1rem 0;
   }

@@ -62,27 +62,23 @@ const MobileNav = () => {
   const openAndCloseNav = () => toggleOpen(!open)
 
   return (
-    <>
-      <MobileNavStyles>
-        <MenuRoundedIcon
-          className="mobile-nav_hamburger"
+    <MobileNavStyles>
+      <MenuRoundedIcon
+        className="mobile-nav_hamburger"
+        onClick={openAndCloseNav}
+      />
+      <div className={open ? `mobile-nav_overlay open` : `mobile-nav_overlay`}>
+        <CloseRoundedIcon
+          className="mobile-nav_close"
           onClick={openAndCloseNav}
         />
-        <div
-          className={open ? `mobile-nav_overlay open` : `mobile-nav_overlay`}
-        >
-          <CloseRoundedIcon
-            className="mobile-nav_close"
-            onClick={openAndCloseNav}
-          />
-          <div className="mobile-nav_items">
-            <Link href="/discography">Discography</Link>
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
-          </div>
+        <div className="mobile-nav_items">
+          <Link href="/discography">Discography</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </div>
-      </MobileNavStyles>
-    </>
+      </div>
+    </MobileNavStyles>
   )
 }
 
