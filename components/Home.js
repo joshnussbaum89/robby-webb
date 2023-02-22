@@ -19,10 +19,11 @@ const HomeStyles = styled.nav`
   .nav-items {
     display: flex;
     li {
-      margin: 0rem 1rem;
+      margin: 0rem clamp(1rem, 2vw, 2rem);
     }
+
     a {
-      margin: 0rem 1rem;
+      margin: 0rem auto;
     }
   }
 
