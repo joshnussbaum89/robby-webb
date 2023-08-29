@@ -47,8 +47,8 @@ const MobileNavStyles = styled.div`
 
   .mobile-nav_close {
     position: absolute;
-    top: 4.1rem;
-    right: 16px;
+    top: 4rem;
+    right: 2rem;
   }
 
   @media (min-width: 820px) {
@@ -63,15 +63,9 @@ const MobileNav = () => {
 
   return (
     <MobileNavStyles>
-      <MenuRoundedIcon
-        className="mobile-nav_hamburger"
-        onClick={openAndCloseNav}
-      />
+      <MenuRoundedIcon className="mobile-nav_hamburger" onClick={openAndCloseNav} />
       <div className={open ? `mobile-nav_overlay open` : `mobile-nav_overlay`}>
-        <CloseRoundedIcon
-          className="mobile-nav_close"
-          onClick={openAndCloseNav}
-        />
+        <CloseRoundedIcon className="mobile-nav_close" onClick={openAndCloseNav} />
         <div className="mobile-nav_items">
           <Link href="/discography">Discography</Link>
           <Link href="/about">About</Link>

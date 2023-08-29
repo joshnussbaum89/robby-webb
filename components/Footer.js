@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 const FooterStyles = styled.footer`
-  margin: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   font-size: var(--extraSmall);
   text-align: center;
   font-weight: 200;
@@ -12,13 +11,9 @@ const FooterStyles = styled.footer`
 const Footer = () => {
   return (
     <FooterStyles>
-      &copy; Made with care by{' '}
-      <a
-        href="https://joshnussbaum.io"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Josh Nussbaum
+      &copy; Made by{' '}
+      <a href="https://wavelandweb.com" target="_blank" rel="noopener noreferrer">
+        Wave Land Web
       </a>
     </FooterStyles>
   )

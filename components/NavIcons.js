@@ -10,7 +10,12 @@ const NavIconsStyles = styled.div`
   z-index: 100;
 
   a {
-    padding: 1rem 0;
+    padding: 2rem 0;
+  }
+
+  svg {
+    display: block;
+    height: 100%;
   }
 `
 
